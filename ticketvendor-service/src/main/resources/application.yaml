@@ -1,0 +1,21 @@
+
+spring:
+  config:
+    import: file:env.properties
+  application:
+    name: ticketvendor-service
+
+  datasource:
+    url: jdbc:h2:file:./ticketvendor;AUTO_SERVER=TRUE
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+server:
+  port: 3131

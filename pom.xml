@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>de.workshops</groupId>
+    <artifactId>ticketvendor</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>ticketvendor</name>
+    <description>Backend implementation of the ticket vendor API (uses module ticketvendor-api)</description>
+    <modules>
+        <module>ticketvendor-api</module>
+        <module>ticketvendor-service</module>
+    </modules>
+    <url/>
+    <licenses>
+        <license/>
+    </licenses>
+    <developers>
+        <developer/>
+    </developers>
+    <scm>
+        <connection/>
+        <developerConnection/>
+        <tag/>
+        <url/>
+    </scm>
+</project>
