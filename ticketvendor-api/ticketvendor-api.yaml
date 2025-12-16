@@ -6,7 +6,7 @@ info:
 servers:
   - url: 'http://localhost:3333/ticketventdor/api'
 paths:
-  /event:
+  /events:
     get:
       summary: Get all events (by an optional category and/or city)
       description: |
@@ -43,7 +43,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorModel'
-  /event/{id}:
+  /events/{id}:
     get:
       description: Get details for a certain event, identified by ID
       operationId: getEvent
@@ -69,7 +69,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorModel'
-  /event/{id}/order:
+  /events/{id}/orders:
     post:
       description: Order tickets for a certain event.
       operationId: orderEventTickets
@@ -108,7 +108,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorModel'
-  /event/{id}/reserve:
+  /events/{id}/reservations:
     post:
       description: Reserve tickets for a certain event.
       operationId: reserveEventTickets
