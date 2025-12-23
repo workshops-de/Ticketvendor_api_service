@@ -39,7 +39,7 @@ public interface TicketVendorApi {
      */
     @HttpExchange(
             method = "GET",
-            value = "/event",
+            value = "/events",
             accept = { "application/json" }
     )
     ResponseEntity<List<Event>> getEvents(
@@ -58,7 +58,7 @@ public interface TicketVendorApi {
      */
     @HttpExchange(
         method = "GET",
-        value = "/event/{id}",
+        value = "/events/{id}",
         accept = { "application/json" }
     )
     ResponseEntity<Event> getEvent(
@@ -78,7 +78,7 @@ public interface TicketVendorApi {
      */
     @HttpExchange(
         method = "POST",
-        value = "/event/{id}/order",
+        value = "/events/{id}/orders",
         accept = { "application/json" },
         contentType = "application/json"
     )
@@ -100,7 +100,7 @@ public interface TicketVendorApi {
      */
     @HttpExchange(
         method = "POST",
-        value = "/event/{id}/reserve",
+        value = "/events/{id}/reservations",
         accept = { "application/json" },
         contentType = "application/json"
     )
