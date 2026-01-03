@@ -17,6 +17,3 @@ spring:
 
 server:
   port: 3131
-
-hibernate:
-  dialect: org.hibernate.dialect.H2Dialect
