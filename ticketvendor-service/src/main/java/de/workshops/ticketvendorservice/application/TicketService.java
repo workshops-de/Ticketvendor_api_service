@@ -2,14 +2,17 @@ package de.workshops.ticketvendorservice.application;
 
 import de.workshops.ticketvendorapi.model.EventStatus;
 import de.workshops.ticketvendorapi.model.Price;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.UUID;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
+@Transactional
 class TicketService implements TicketOrderUseCase, TicketReservationUseCase {
     private final EventService eventService;
     private final TicketUpdatePort ticketUpdatePort;
